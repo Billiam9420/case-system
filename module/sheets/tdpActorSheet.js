@@ -1,5 +1,14 @@
 export default class tdpActorSheet extends ActorSheet
 {
+    static get defaultOptions()
+    {
+        return mergeObject(super.defaultOptions,
+        {
+            width: 1500,
+            height: 1000
+        });
+    }
+
     get template()
     {
         return `systems/case-system/templates/actors/${this.actor.data.type}-sheet.html`;
