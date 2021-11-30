@@ -14,6 +14,6 @@
 	"socket": false,
 	"initiative": "1d6",
 	"url": "https://github.com/Billiam9420/case-system",
-	"manifest": "https://github.com/Billiam9420/case-system/blob/main/system.json",
-	"download": ""
+	"manifest": "https://raw.githubusercontent.com/Billiam9420/case-system/main/system.json",
+	"download": "https://github.com/Billiam9420/case-system/archive/refs/tags/v1.1.zip"
 }
