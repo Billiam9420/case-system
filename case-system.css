@@ -1,0 +1,65 @@
+.column
+{
+  float: left;
+  width: 48%;
+  margin: 5px;
+}
+
+.row:after
+{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+h1, h2, h3
+{
+	font-family: "OCR A Std", monospace;
+	color: white;
+	border: none;
+}
+
+input[type=text], input[type=number], textarea
+{
+	color:white;
+}
+
+input:focus, textarea:focus
+{
+	color:white;
+}
+
+::placeholder
+{
+	color:white;
+	opacity: 1;
+}
+
+:-ms-input-placeholder
+{
+	color:white;
+}
+
+::-ms-input-placeholder
+{
+	color:white;
+}
+
+.rollable:hover
+{
+	cursor: pointer;
+}
+
+/*.name-desc-box
+{
+	background-image: url("./assets/name-desc-box.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+}*/
+
+.player-sheet
+{
+	background-image: url("./assets/crew-sheet-background.png");
+	background-size: 1856px 1314px;
+	background-color: rgb(60, 60, 65);
+}

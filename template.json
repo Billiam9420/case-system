@@ -1,0 +1,73 @@
+{
+	"Actor":
+	{
+		"types": ["Player", "NPC", "Creature"],
+		"templates":
+		{
+			"attributes":
+			{
+				"charisma": 1,
+				"charisma-penalties": "",
+				"agility": 1,
+				"agility-penalties": "",
+				"strength": 1,
+				"strength-penalties": "",
+				"education": 1,
+				"education-penalties": ""
+			},
+			"info": ""
+		},
+		"Player":
+		{
+			"templates": ["attributes", "info"],
+			"roles":
+			{
+				"helm": 0,
+				"nav": 0,
+				"sci": 0,
+				"sec": 0,
+				"liai": 0,
+				"eng": 0,
+				"med": 0
+			},
+			"pressure":
+			{
+				"pressure-value": 
+				{
+					"min": 0,
+					"value": 0,
+					"max": 6
+				},
+				"pressure-bonus": 0,
+				"episodes": ""
+			},
+			"other":
+			{
+				"notes": "",
+				"time-left":
+				{
+					"years": 25,
+					"months": 0,
+					"days": 0
+				}
+			}
+		},
+		"NPC":
+		{
+			"templates": ["attributes", "info"],
+			"role": ""
+		},
+		"Creature":
+		{
+			"templates": ["attributes", "info"]
+		}
+	},
+	"Item":
+	{
+		"types": ["Equipment"],
+		"item":
+		{
+			"info": ""
+		}
+	}
+}

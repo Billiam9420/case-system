@@ -1,0 +1,19 @@
+{
+	"name": "case-system",
+	"title": "CASE System",
+	"description": "CASE RPG System for Those Dark Places from Osprey Publishing",
+	"version": "1.0",
+	"author": "Billiam94",
+	"compatibleVersion": "0.8.9",
+	"minimumCoreVersion": "0.8.9",
+	"scripts": [],
+	"esmodules": ["case-system.js"],
+	"styles": ["case-system.css"],
+	"packs": [],
+	"languages": [],
+	"socket": false,
+	"initiative": "1d6",
+	"url": "",
+	"manifest": "",
+	"download": ""
+}

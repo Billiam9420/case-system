@@ -1,0 +1,107 @@
+<form class="player-sheet {{cssClass}}" autocomplete="off">
+
+    <h1>CREW SHEET</h1>
+    <header class="sheet-header name-desc-box">
+        <img src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="64" width="64"/>
+
+        <section class="name-desc">
+            <h1 class="charname text-input">
+                <input name="name" type="text" size="12" value="{{actor.name}}" placeholder="{{ localize 'Name' }}"/>
+            </h1>
+            <h1 class="chardesc text-input">
+                <input name="data.info" type="text" value="{{data.info}}" placeholder="{{ localize 'Description' }}"/>
+            </h1>
+        </section>
+    </header>
+    <div class="row">
+    <div class="column">
+    <h2>//Case File</h2>
+    <ul class="case-file">
+        <li class="charisma flexrow">
+            <h3 class="charisma-label rollable" data-roll="d6+@attributes.charisma.value" data-label="charisma">Charisma</h3>
+            <input name="data.attributes.charisma.value" type="number" value="{{data.attributes.charisma.value}}" placeholder="1"/>
+            <input name="data.attributes.charisma-penalties" type="text" value="{{data.attributes.charisma-penalties}}" placeholder="Penalties"/>
+        </li>
+        <li class="agility flexrow">
+            <h3 class="agility-label rollable" data-roll="d6+@attributes.agility.value" data-label="agility">Agility</h3>
+            <input name="data.attributes.agility.value" type="number" value="{{data.attributes.agility.value}}" placeholder="1"/>
+            <input name="data.attributes.agility-penalties" type="text" value="{{data.attributes.agility-penalties}}" placeholder="Penalties"/>
+        </li>
+        <li class="strength flexrow">
+            <h3 class="strength-label rollable" data-roll="d6+@attributes.strength.value" data-label="strength">Strength</h3>
+            <input name="data.attributes.strength.value" type="number" value="{{data.attributes.strength.value}}" placeholder="1"/>
+            <input name="data.attributes.strength-penalties" type="text" value="{{data.attributes.strength-penalties}}" placeholder="Penalties"/>
+        </li>
+        <li class="education flexrow">
+            <h3 class="education-label rollable" data-roll="d6+@attributes.education.value" data-label="education">Education</h3>
+            <input name="data.attributes.education.value" type="number" value="{{data.attributes.education.value}}" placeholder="1"/>
+            <input name="data.attributes.education-penalties" type="text" value="{{data.attributes.education-penalties}}" placeholder="Penalties"/>
+        </li>
+    </ul>
+    <h2>&gt&gtCrew Positions</h2>
+    <ul class="crew-positions">
+        <li class="helm flexrow">
+            <h3 class="helm-label">Helm Officer</h3>
+            <input name="data.attributes.helm.value" type="number" max="2" value="{{data.attributes.helm.value}}" placeholder="0"/>
+        </li>
+        <li class="nav flexrow">
+            <h3 class="nav-label">Navigation Officer</h3>
+            <input name="data.attributes.nav.value" type="number" max="2" value="{{data.attributes.nav.value}}" placeholder="0"/>
+        </li>
+        <li class="sci flexrow">
+            <h3 class="sci-label">Science Officer</h3>
+            <input name="data.attributes.sci.value" type="number" max="2" value="{{data.attributes.sci.value}}" placeholder="0"/>
+        </li>
+        <li class="sec flexrow">
+            <h3 class="sec-label">Security Officer</h3>
+            <input name="data.attributes.sec.value" type="number" max="2" value="{{data.attributes.sec.value}}" placeholder="0"/>
+        </li>
+        <li class="liai flexrow">
+            <h3 class="liai-label">Liaison Officer</h3>
+            <input name="data.attributes.liai.value" type="number" max="2" value="{{data.attributes.liai.value}}" placeholder="0"/>
+        </li>
+        <li class="eng flexrow">
+            <h3 class="eng-label">Engineering Officer</h3>
+            <input name="data.attributes.eng.value" type="number" max="2" value="{{data.attributes.eng.value}}" placeholder="0"/>
+        </li>
+        <li class="med flexrow">
+            <h3 class="med-label">Medical Officer</h3>
+            <input name="data.attributes.med.value" type="number" max="2" value="{{data.attributes.med.value}}" placeholder="0"/>
+        </li>
+    </ul>
+    </div>
+    <div class="column">
+        <h2>&gt&gtPressure</h2>
+        <ul>
+            <li class="pressure-bonus flexrow">
+                <h3 class="rollable" data-roll="d6+@pressure.pressure-bonus.value" data-label="pressure">Pressure Bonus</h3>
+                <input name="data.pressure.pressure-bonus.value" type="number" value="{{data.pressure.pressure-bonus.value}}" placeholder="0"/>
+            </li>
+            <li class="pressure-level flexrow">
+                <h3>Pressure Level</h3>
+                <input name="data.pressure.pressure-level.value" type="number" value="{{data.pressure.pressure-level.value}}" placeholder="0"/>
+            </li>
+        </ul>
+        <h2>&#9711 EPISODES</h2>
+        <input name="data.pressure.episodes" type="text" value="{{data.pressure.episodes}}" placeholder="None"/>
+        <h2>NOTES</h2>
+        <input class="text-input" name="data.other.notes" type="text" value="{{data.other.notes}}" placeholder="None"/>
+        <h2>TIME LEFT UNTIL RETIREMENT</h2>
+        <ul>
+            <li class="flexrow">
+                <h3>Years</h3>
+                <input name="data.other.time-left.years" type="number" value="{{data.other.time-left.years}}", placeholder="25">
+            </li>
+            <li class="flexrow">
+                <h3>Months</h3>
+                <input name="data.other.time-left.months" type="number" value="{{data.other.time-left.months}}", placeholder="0">
+            </li>
+            <li class="flexrow">
+                <h3>Days</h3>
+                <input name="data.other.time-left.days" type="number" value="{{data.other.time-left.days}}", placeholder="0">
+            </li>
+        </ul>
+    </div>
+    </div>
+</form>
+
