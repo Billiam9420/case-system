@@ -1,5 +1,4 @@
 {
-	//define actor types and common stats
 	"Actor":
 	{
 		"types": ["Player", "NPC", "Creature"],
@@ -16,7 +15,21 @@
 				"education": 1,
 				"education-penalties": ""
 			},
-			"info": "",
+			"info": ""
+		},
+		"Player":
+		{
+			"templates": ["attributes", "info"],
+			"roles":
+			{
+				"helm": 0,
+				"nav": 0,
+				"sci": 0,
+				"sec": 0,
+				"liai": 0,
+				"eng": 0,
+				"med": 0
+			},
 			"pressure":
 			{
 				"pressure-value": 
@@ -27,21 +40,6 @@
 				},
 				"pressure-bonus": 0,
 				"episodes": ""
-			}
-		},
-		// player characters need the most variables because they are the most complex
-		"Player":
-		{
-			"templates": ["attributes", "info", "pressure"],
-			"roles":
-			{
-				"helm": 0,
-				"nav": 0,
-				"sci": 0,
-				"sec": 0,
-				"liai": 0,
-				"eng": 0,
-				"med": 0
 			},
 			"other":
 			{
@@ -54,18 +52,16 @@
 				}
 			}
 		},
-		// NPCs and creatures are the same except that creatures don't get ship roles
 		"NPC":
 		{
-			"templates": ["attributes", "info", "pressure"],
+			"templates": ["attributes", "info"],
 			"role": ""
 		},
 		"Creature":
 		{
-			"templates": ["attributes", "info", "pressure"]
+			"templates": ["attributes", "info"]
 		}
 	},
-	// TODO: Items!
 	"Item":
 	{
 		"types": ["Equipment"],

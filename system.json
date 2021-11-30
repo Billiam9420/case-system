@@ -1,4 +1,3 @@
-// system.json is the manifest file that defines the game's core information
 {
 	"name": "case-system",
 	"title": "CASE System",
