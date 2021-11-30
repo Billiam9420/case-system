@@ -13,7 +13,7 @@
 	"languages": [],
 	"socket": false,
 	"initiative": "1d6",
-	"url": "",
-	"manifest": "",
+	"url": "https://github.com/Billiam9420/case-system",
+	"manifest": "https://github.com/Billiam9420/case-system/blob/main/system.json",
 	"download": ""
 }
