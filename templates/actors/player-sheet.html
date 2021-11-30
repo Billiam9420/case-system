@@ -1,6 +1,7 @@
 <form class="player-sheet {{cssClass}}" autocomplete="off">
-
-    <h1>CREW SHEET</h1>
+    <!-- Title: CREW SHEET -->
+    <h1>CREW SHEET</h1> 
+    <!-- Header containing image, name, and description for the character -->
     <header class="sheet-header name-desc-box">
         <img src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="64" width="64"/>
 
@@ -13,8 +14,11 @@
             </h1>
         </section>
     </header>
+
+    <!-- Two-column layout -->
     <div class="row">
     <div class="column">
+    <!-- Character stats (CASE) -->
     <h2>//Case File</h2>
     <ul class="case-file">
         <li class="charisma flexrow">
@@ -38,6 +42,7 @@
             <input name="data.attributes.education-penalties" type="text" value="{{data.attributes.education-penalties}}" placeholder="Penalties"/>
         </li>
     </ul>
+    <!-- Primary and secondary crew roles -->
     <h2>&gt&gtCrew Positions</h2>
     <ul class="crew-positions">
         <li class="helm flexrow">
@@ -71,6 +76,7 @@
     </ul>
     </div>
     <div class="column">
+    <!-- Under pressure! -->
         <h2>&gt&gtPressure</h2>
         <ul>
             <li class="pressure-bonus flexrow">
@@ -86,6 +92,7 @@
         <input name="data.pressure.episodes" type="text" value="{{data.pressure.episodes}}" placeholder="None"/>
         <h2>NOTES</h2>
         <input class="text-input" name="data.other.notes" type="text" value="{{data.other.notes}}" placeholder="None"/>
+        <!-- The day that never comes -->
         <h2>TIME LEFT UNTIL RETIREMENT</h2>
         <ul>
             <li class="flexrow">
