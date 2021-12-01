@@ -64,10 +64,20 @@
 	},
 	"Item":
 	{
-		"types": ["Equipment"],
-		"item":
+		"types": ["Equipment", "Weapon"],
+		"templates": 
 		{
 			"info": ""
+		},
+		"Equipment":
+		{
+			"templates": ["info"]
+		},
+		"Weapon":
+		{
+			"templates": ["info"],
+			"damage": 0,
+			"ammo": 0
 		}
 	}
 }

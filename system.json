@@ -2,7 +2,7 @@
 	"name": "case-system",
 	"title": "CASE System",
 	"description": "CASE RPG System for Those Dark Places from Osprey Publishing",
-	"version": "1.1",
+	"version": "1.2",
 	"author": "Billiam94",
 	"compatibleCoreVersion": "0.8.9",
 	"minimumCoreVersion": "0.8.9",
@@ -12,7 +12,7 @@
 	"packs": [],
 	"languages": [],
 	"socket": false,
-	"initiative": "1d6",
+	"initiative": "d6+@attribute.agility.value",
 	"url": "https://github.com/Billiam9420/case-system",
 	"manifest": "https://raw.githubusercontent.com/Billiam9420/case-system/main/system.json",
 	"download": "https://github.com/Billiam9420/case-system/archive/refs/tags/v1.1.zip"
